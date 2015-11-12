@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<!--
+		Scratch
+
+		An offline light-weight scratchpad for JavaScript debugging.
+
+		@author Scott Christopher Stauffer <scstauf at gmail dot com>
+	-->
+	<head>
+		<title>ScratchPad</title>
+		<link rel="stylesheet" type="text/css" href="scratch.css">
+		<script type="text/javascript" src="interp.min.js"></script>
+		<script type="text/javascript" src="scratch.js"></script>
+	</head>
+	
+	<body>
+		<div id="input-container" class="container">
+			<label>JavaScript <textarea id="eval-is-evil" placeholder="alert('hello world!');"></textarea></label>
+			<button id="btn-clickme">Execute JavaScript</button>
+			<button id="btn-colorize">Colorize</button>
+			<button id="btn-print-scheme">Print Scheme</button>
+		</div>
+		<div id="output-container">
+			<label>Log <textarea id="scratchpad-log" placeholder="Use the print(String) or println(String) functions to write output here..."></textarea></label>
+		</div>
+		<br />
+		<label>
+			Scheme Imports 
+			<div id="import-container">
+				<textarea id="scheme-import" placeholder="Scheme JSON goes here..."></textarea>
+				<div id="import-list">
+					<ul id="scheme-list"></ul>
+					<button id="btn-import">Import Schemes</button>
+				</div>
+			</div>
+		</label>
+	</body>	
+</html>
