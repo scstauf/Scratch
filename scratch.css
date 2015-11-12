@@ -1,0 +1,91 @@
+/**
+ *	Scratch
+ *
+ *	An offline light-weight scratchpad for JavaScript debugging.
+ *
+ *	@author Scott Christopher Stauffer <scstauf at gmail dot com>
+ */
+
+ * {
+	font-family: monospace;
+}
+
+body {
+	background-color: #002d3d;
+	color: #b2e0ef;
+}
+
+textarea, label {
+	display: block;
+}
+
+label {
+	margin-top: 5px;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+textarea {			
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 99%;
+	height: 250px;
+	margin: 5px 5px 5px 5px;
+	overflow: auto;
+	background-color: #d2fbef;
+}
+
+textarea#eval-is-evil {
+	height: 100px !important;
+}
+
+textarea#scheme-import {
+	width: 45% !important;
+	float: left;
+}
+
+ul#scheme-list {
+	display: inline-block;
+	float: left;
+	width: 35%;
+	height: 245px;
+	margin-top: 5px;
+	border: 1px solid white;
+	overflow: auto;
+	list-style-type: none;
+	text-align: left;
+	padding-left: 0pt;
+}
+
+li:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+div#import-list {
+	display: inline-block;
+	float: left;
+	width: 35%;
+}
+
+.container {
+	width: 100%;
+	height: 160px;
+	border: 1px dashed #8894ae;
+}
+
+#btn-clickme {
+	margin-left: 5px;
+}
+
+#btn-import {
+	display: inline-block;
+	float: left;
+	margin-left: 5px;
+}
+
+#output-container {
+	margin-top: 5px;
+}
